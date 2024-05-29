@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body style="background:black; color:white;">
+
+  <div class="container my-3 mt-3">
+      <h1 style="text-align:center">Breast Cancer Prediction Model</h1>
+          <form action="/predict" method="POST">
+            <div class="mb-3">
+              <label for="text" class="form-label">Input Breast Cancer Features</label>
+              <input type="text" class="form-control" id="number" name="feature" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+      </form>
+
+<!--         {% for i in message %}-->
+<!--      <p>{{i}}</p>-->
+<!--          {% if i=='Not Cancrouse' %}-->
+<!--            <div class="card my-3 mt-3" style="width: 18rem;">-->
+
+<!--              <div class="card-body">-->
+<!--                <h5 class="card-title">Not Cancrouse</h5>-->
+<!--                <p class="card-text">Don't Worry You don't have Breast Cancer Disease, Enjoy your life.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          {% else %}-->
+<!--            <div class="card my-3 mt-3" style="width: 18rem;">-->
+<!--              <div class="card-body">-->
+<!--                <h5 class="card-title">Cancrouse</h5>-->
+<!--                <p class="card-text">Alert You have a Breast Cancer Disease, check yourself by doctor.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          {% endif %}-->
+<!--        {% endfor %}-->
+
+
+
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTPVePUkhP1xu7Nf6rvvmK3k9UGi1Pu65dWvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/bc1q2jjl7eafeja8tlsrndhrvxkga39a4699luvmr2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTPVePUkhP1xu7Nf6rvvmK3k9UGi1Pu65dWNTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!--Area	Item	Year	hg/ha_yield	average_rain_fall_mm_per_year	pesticides_tonnes	avg_temp-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="text-center text-success">Crop Yield Production Per Country</h1>
+  <div class="container mt-4 my-4 "style="background:black;color:white;border-raduis:20px;">
+    <h1 class="text-center text-success">Crop Features Here</h1>
+
+    <form action="/Predict" method="POST">
+      <div class="form-group">
+        <label for="Year"> Year</label>
+        <input type="number" class="form-control" name="Year" step="any">
+      </div>
+      <div class="form-group">
+        <label for="average_rain_fall_mm_per_year"> average_rain_fall_mm_per_year</label>
+        <input type="number" class="form-control" name="average_rain_fall_mm_per_year" step="any">
+      </div>
+      <div class="form-group">
+        <label for="Item"> Item</label>
+        <input type="text" class="form-control" name="Item" step="any">
+      </div>
+      <div class="form-group">
+        <label for="Area"> Area</label>
+        <input type="text" class="form-control" name="Area" step="any">
+      </div>
+      <div class="form-group">
+        <label for="pesticides_tonnes"> pesticides_tonnes</label>
+        <input type="number" class="form-control" name="pesticides_tonnes" step="any">
+      </div>
+      <div class="form-group">
+        <label for="avg_temp"> avg_temp</label>
+        <input type="number" class="form-control" name="avg_temp" step="any">
+      </div>
+      <button class="btn btn-danger mt-4">Predict</button>
+    </form>
+<!--    {% if prediction %}-->
+<!--      <h1 class="text-center"> Predicted Yield: <br>{{prediction}}</h1>-->
+
+<!--      {% endif %}-->
+
+  </div>
+
+
+
+  </body>
+</html>
